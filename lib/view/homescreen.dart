@@ -17,6 +17,7 @@ class _ScreenOneState extends State<ScreenOne> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        toolbarHeight: 100,
         backgroundColor: ColorConstants.primaryGreen,
         leading: Icon(Icons.sort),
         title: TextButton(
@@ -24,7 +25,7 @@ class _ScreenOneState extends State<ScreenOne> {
             child: TextField(
               decoration: InputDecoration(
                 hintText: "Search",
-                prefixIconConstraints: BoxConstraints(minWidth: 30),
+                prefixIconConstraints: BoxConstraints(minWidth: 50),
                 prefixIcon: Icon(
                   Icons.search,
                   size: 20,

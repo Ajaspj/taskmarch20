@@ -16,7 +16,7 @@ class Category extends StatelessWidget {
           width: 100,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(5),
-            color: ColorConstants.primaryGreen.withOpacity(.5),
+            color: ColorConstants.primaryGrey.withOpacity(.1),
           ),
           child: Padding(
             padding: EdgeInsets.all(10),

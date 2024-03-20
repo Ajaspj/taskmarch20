@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:taskmarch20/constants/colorconstants/colorconstant.dart';
+import 'package:taskmarch20/view/checkoutscreen/checkoutscreen.dart';
+import 'package:taskmarch20/view/dummydb.dart';
 
 class ProductScreen extends StatelessWidget {
   const ProductScreen({
@@ -59,7 +61,7 @@ class ProductScreen extends StatelessWidget {
                                   height: 20,
                                 ),
                                 Text(
-                                  "red label tea",
+                                  "Red label Tea",
                                   style: TextStyle(
                                       color: ColorConstants.primaryBlack,
                                       fontWeight: FontWeight.bold,
@@ -101,7 +103,7 @@ class ProductScreen extends StatelessWidget {
                                       width: 15,
                                     ),
                                     Text(
-                                      "4.2*",
+                                      "96 ratings",
                                       style: TextStyle(
                                           color: ColorConstants.primaryBlack
                                               .withOpacity(.4),
@@ -121,7 +123,7 @@ class ProductScreen extends StatelessWidget {
                                     SizedBox(
                                       width: 5,
                                     ),
-                                    Text("5% off",
+                                    Text("\$18",
                                         style: TextStyle(
                                             fontWeight: FontWeight.bold,
                                             fontSize: 12,
@@ -130,11 +132,11 @@ class ProductScreen extends StatelessWidget {
                                     SizedBox(
                                       width: 3,
                                     ),
-                                    // Text(productModel.offer,
-                                    //     style: TextStyle(
-                                    //         fontWeight: FontWeight.bold,
-                                    //         fontSize: 10,
-                                    //         color: Colors.green)),
+                                    Text("5% off",
+                                        style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 10,
+                                            color: Colors.green)),
                                     SizedBox(
                                       width: 10,
                                     ),
@@ -191,7 +193,8 @@ class ProductScreen extends StatelessWidget {
                           itemBuilder: (context, index) => Row(
                                 children: [
                                   Text(
-                                    "brand",
+                                    DummyDb.productdetails[index]
+                                        ["productname"],
                                     style: TextStyle(
                                         color: ColorConstants.primaryBlack
                                             .withOpacity(.4)),
@@ -200,7 +203,7 @@ class ProductScreen extends StatelessWidget {
                                     width: 70,
                                   ),
                                   Text(
-                                    "",
+                                    DummyDb.productdata[index]["productdata"],
                                     style: TextStyle(
                                         color: ColorConstants.primaryBlack,
                                         fontWeight: FontWeight.bold),
@@ -262,7 +265,13 @@ class ProductScreen extends StatelessWidget {
                           style: ElevatedButton.styleFrom(
                               padding: EdgeInsets.symmetric(horizontal: 100),
                               backgroundColor: ColorConstants.primaryGreen),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => CheckoutScreen(),
+                                ));
+                          },
                           child: Text(
                             "ADD TO CART",
                             style:

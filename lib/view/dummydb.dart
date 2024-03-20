@@ -61,4 +61,20 @@ class DummyDb {
       "offer": "5% off"
     },
   ];
+  static List<Map<String, dynamic>> productdetails = [
+    {"productname": "Brand"},
+    {"productname": "Type"},
+    {"productname": "Quantity"},
+    {"productname": "Shelf life"},
+    {"productname": "Organic"},
+    {"productname": "Flavor"},
+  ];
+  static List<Map<String, dynamic>> productdata = [
+    {"productdata": "Red label"},
+    {"productdata": "Black tea"},
+    {"productdata": "7 kg"},
+    {"productdata": "12 months"},
+    {"productdata": "No"},
+    {"productdata": "Plain"},
+  ];
 }
