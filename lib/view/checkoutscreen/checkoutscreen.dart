@@ -193,7 +193,7 @@ class _CheckoutScreenState extends State<CheckoutScreen> {
                 elevation: 5,
                 child: Container(
                     padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-                    height: 200,
+                    height: 160,
                     width: 370,
                     decoration: BoxDecoration(
                         color: ColorConstants.primaryWhite,
@@ -231,9 +231,51 @@ class _CheckoutScreenState extends State<CheckoutScreen> {
                                   Text("\$5"),
                                 ],
                               ),
+                              Row()
+                            ],
+                          ),
+                          Divider(),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                "Total Amount ",
+                                style: TextStyle(
+                                    color: ColorConstants.primaryBlack,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 12),
+                              ),
+                              Text(
+                                "\$21",
+                                style: TextStyle(
+                                    color: ColorConstants.primaryBlack,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 12),
+                              )
                             ],
                           )
-                        ]))))
+                        ])))),
+        SizedBox(
+          height: 150,
+        ),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 50),
+          child: ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                  padding: EdgeInsets.symmetric(horizontal: 100),
+                  backgroundColor: ColorConstants.primaryGreen),
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => CheckoutScreen(),
+                    ));
+              },
+              child: Text(
+                "PROCEED TO CHECKOUT→",
+                style: TextStyle(color: ColorConstants.primaryWhite),
+              )),
+        )
       ]),
     ));
   }
