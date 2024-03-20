@@ -44,7 +44,7 @@ class DummyDb {
     },
     {
       "bestSellerImage":
-          "https://kalbavi.com/wp-content/uploads/2022/06/Popular-Cashew-500g-Front-scaled.jpg",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8mTGwHlF8GNKPaUW5mLBvxpKjTAcnrAbrLw&s",
       "starCount": 5,
       "bestSellerName": "Read Label Tea Leaf, 1kg",
       "price": "\$12",

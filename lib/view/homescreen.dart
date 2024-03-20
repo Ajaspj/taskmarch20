@@ -3,6 +3,7 @@ import 'package:taskmarch20/constants/colorconstants/colorconstant.dart';
 import 'package:taskmarch20/view/bestseller.dart';
 import 'package:taskmarch20/view/category.dart';
 import 'package:taskmarch20/view/dummydb.dart';
+import 'package:taskmarch20/view/productdetailsscreen/productdetails.dart';
 
 class ScreenOne extends StatefulWidget {
   const ScreenOne({super.key});
@@ -50,7 +51,7 @@ class _ScreenOneState extends State<ScreenOne> {
                   height: 200,
                   width: 450,
                   child: Image.network(
-                      "https://www.hsph.harvard.edu/nutritionsource/wp-content/uploads/sites/30/2012/09/vegetables-and-fruits-farmers-market.jpg"),
+                      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIIHSs_cKp7P_ZHS9cokd-YNjlQgr9c7V4UQ&s"),
                 ),
               ],
             ),
@@ -124,15 +125,41 @@ class _ScreenOneState extends State<ScreenOne> {
                 child: ListView.separated(
                     scrollDirection: Axis.horizontal,
                     shrinkWrap: true,
-                    itemBuilder: (BuildContext context, int index) =>
-                        BestSeller(
-                          index: index,
+                    itemBuilder: (BuildContext context, int index) => InkWell(
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => ProductScreen()));
+                          },
+                          child: BestSeller(
+                            index: index,
+                          ),
                         ),
                     separatorBuilder: (context, index) => SizedBox(
                           width: 15,
                         ),
                     itemCount: DummyDb.bestSeller.length),
               ),
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: Text(
+                    "Featured Deals",
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: Text(
+                    "view all",
+                    style: TextStyle(color: ColorConstants.primaryGreen),
+                  ),
+                )
+              ],
             ),
           ],
         ),
