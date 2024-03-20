@@ -46,17 +46,17 @@ class DummyDb {
       "bestSellerImage":
           "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8mTGwHlF8GNKPaUW5mLBvxpKjTAcnrAbrLw&s",
       "starCount": 5,
-      "bestSellerName": "Read Label Tea Leaf, 1kg",
-      "price": "\$12",
-      "discount": "\$18",
-      "offer": "5% off"
+      "bestSellerName": "Kaibavi splits, 1kg",
+      "price": "\$5",
+      "discount": "\$10",
+      "offer": "50% off"
     },
     {
       "bestSellerImage":
           "https://ik.imagekit.io/dunzo/1615706591444_product_5d27178c9e1975027f8ead88_1.jpg?tr=w-436,h-436,cm-pad_resize",
       "starCount": 5,
-      "bestSellerName": "Read Label Tea Leaf, 1kg",
-      "price": "\$12",
+      "bestSellerName": "Kaibavi splits, 1kg",
+      "price": "\$3",
       "discount": "\$18",
       "offer": "5% off"
     },
