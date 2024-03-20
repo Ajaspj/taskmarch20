@@ -1,43 +1,64 @@
 class DummyDb {
-  static const List<Map<String, dynamic>> category = [
+  static List<Map<String, dynamic>> category = [
     {
-      "imgurl":
-          "https://images.rawpixel.com/image_png_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvam9iNjAyLW0wMS1renJybmN0bS5wbmc.png",
-      "name": "fruits",
+      "categoryImage":
+          "https://images.pexels.com/photos/1171170/pexels-photo-1171170.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "categoryName": "Fruits",
     },
     {
-      "imgurl":
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz_ZvSdVpmmw3jRwiEhLYJLtxrLWStHlGJkVElORFnRU2sKXMJi9oWv9avy86n53no514&usqp=CAU",
-      "name": "veggies",
+      "categoryImage":
+          "https://images.pexels.com/photos/3872406/pexels-photo-3872406.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "categoryName": "Veggies",
     },
     {
-      "imgurl":
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgTcqFzahYTQ9_VGccJx3TMaGjkzXurHn4htOE0wnLtJBqgSIr6sK4grBcf2vHx5e_pe8&usqp=CAU",
-      "name": "diary",
+      "categoryImage":
+          "https://images.pexels.com/photos/2638026/pexels-photo-2638026.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "categoryName": "Dairy",
     },
     {
-      "imgurl":
-          "https://5.imimg.com/data5/SELLER/Default/2021/10/SV/DX/PL/105153749/coffee-oil.jpg",
-      "name": "essentials",
-    }
+      "categoryImage":
+          "https://images.pexels.com/photos/4239014/pexels-photo-4239014.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "categoryName": "Essential",
+    },
+    {
+      "categoryImage":
+          "https://images.pexels.com/photos/11358156/pexels-photo-11358156.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "categoryName": "Widgets",
+    },
+    {
+      "categoryImage":
+          "https://images.pexels.com/photos/1171170/pexels-photo-1171170.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "categoryName": "Fruits",
+    },
   ];
 
-  static const List<Map<String, dynamic>> bestseller = [
+  static List<Map<String, dynamic>> bestSeller = [
     {
-      "imgurl":
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8lp38Vt3HfYgl08LVwQwjzimw3Dop7cN1WNvc7R4m9Q&s"
+      "bestSellerImage":
+          "https://ik.imagekit.io/dunzo/1615706591444_product_5d27178c9e1975027f8ead88_1.jpg?tr=w-436,h-436,cm-pad_resize",
+      "starCount": 5,
+      "bestSellerName": "Read Label Tea Leaf, 1kg",
+      "price": "\$12",
+      "discount": "\$18",
+      "offer": "5% off"
     },
     {
-      "imgurl":
-          "https://5.imimg.com/data5/SELLER/Default/2021/8/EB/FD/KH/34730368/cashew-nut-pouch-packaging-service.jpg"
+      "bestSellerImage":
+          "https://kalbavi.com/wp-content/uploads/2022/06/Popular-Cashew-500g-Front-scaled.jpg",
+      "starCount": 5,
+      "bestSellerName": "Read Label Tea Leaf, 1kg",
+      "price": "\$12",
+      "discount": "\$18",
+      "offer": "5% off"
     },
-    // {
-    //   "imgurl":
-    //       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgTcqFzahYTQ9_VGccJx3TMaGjkzXurHn4htOE0wnLtJBqgSIr6sK4grBcf2vHx5e_pe8&usqp=CAU"
-    // },
-    // {
-    //   "imgurl":
-    //       "https://5.imimg.com/data5/SELLER/Default/2021/10/SV/DX/PL/105153749/coffee-oil.jpg"
-    // }
+    {
+      "bestSellerImage":
+          "https://ik.imagekit.io/dunzo/1615706591444_product_5d27178c9e1975027f8ead88_1.jpg?tr=w-436,h-436,cm-pad_resize",
+      "starCount": 5,
+      "bestSellerName": "Read Label Tea Leaf, 1kg",
+      "price": "\$12",
+      "discount": "\$18",
+      "offer": "5% off"
+    },
   ];
 }
